@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .badge {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #ff6347; /* Coral color */
+            color: #fff;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>E-Commerce Website</h1>
+            <!-- Navigation Menu -->
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Featured Products Section -->
+        <section>
+            <h2>Featured Products</h2>
+            <div class="card">
+                <img src="data:image/jpeg;base64,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" alt="Product 1" class="product-image">
+                <h3>Product 1</h3>
+                <p>Description of Product 1</p>
+                <span class="badge">New Arrival</span>
+                <span class="badge">Sale</span>
+                <p>$50.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Repeat similar cards for other featured products -->
+        </section>
+        
+        <!-- Categories Section -->
+        <section>
+            <h2>Categories</h2>
+            <div class="card">
+                <h3>Category 1</h3>
+                <p>Description of Category 1</p>
+                <button>View Products</button>
+            </div>
+            <!-- Repeat similar cards for other categories -->
+        </section>
+        
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 E-Commerce Website. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
